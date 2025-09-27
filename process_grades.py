@@ -47,3 +47,8 @@ if __name__ == "__main__":
     result = process_grades(students)
     print("\nFinal processing result:")
     print(result)
+
+        # Path 1: grades == None
+        # Path 2: grades != None and average > 70
+        # Path 3: grades != None and average == 70
+        # Path 4: grades != None and average < 50
