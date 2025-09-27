@@ -35,12 +35,13 @@ def process_grades(students):
 
 
 if __name__ == "__main__":
-    print("=== Running statement coverage tests ===")
+    print("=== Running decision coverage tests ===")
+
     students = [
-        {'name': 'Ana', 'grades': [80, 90, 85]},
-        {'name': 'Luis', 'grades': [70, 70, 70]},
-        {'name': 'Jorge', 'grades': []},
-        {'name': 'Marta', 'grades': [40, 45, 50]}
+        {'name': 'Ana', 'grades': [80, 90, 85]},   # average > 70
+        {'name': 'Luis', 'grades': [70, 70, 70]},  # average == 70
+        {'name': 'Marta', 'grades': [40, 45, 50]}, # average < 50
+        {'name': 'Jorge', 'grades': []}            # lista vacía
     ]
 
     result = process_grades(students)
