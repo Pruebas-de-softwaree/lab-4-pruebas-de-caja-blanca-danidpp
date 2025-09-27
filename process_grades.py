@@ -9,7 +9,7 @@ def process_grades(students):
         name = student['name']
         grades = student['grades']
         
-        if grades == None:  
+        if not grades:  
             print(f"Student {name} has no grades")
             continue
         
@@ -35,6 +35,7 @@ def process_grades(students):
 
 
 if __name__ == "__main__":
+    print("=== Running statement coverage tests ===")
     students = [
         {'name': 'Ana', 'grades': [80, 90, 85]},
         {'name': 'Luis', 'grades': [70, 70, 70]},
